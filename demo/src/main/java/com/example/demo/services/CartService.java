@@ -24,7 +24,9 @@ public class CartService {
  
     @Transactional
     public Cart addToCart(Long userId, Long menuItemId, int quantity) {
-        if (quantity <= 0) {
+        if(quantity<=2)
+      //  if (quantity <= 0)
+             {
             throw new InvalidOperationException("Quantity must be at least 1");
         }
  
