@@ -12,6 +12,7 @@ public class AddMenuItemRequest {
  
     @NotBlank(message = "Name is required")
     private String name;
+    private String restaurantName;
  
     private String description;
  
